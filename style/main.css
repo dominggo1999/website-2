@@ -275,13 +275,14 @@ header {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header .slides-wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: black;
+  position: relative;
 }
 
 header .slides-wrapper .slide {
@@ -486,6 +487,12 @@ header .slide-nav span {
 
 header .slide-nav span.active {
   background: #4A8B71;
+}
+
+@media screen and (max-height: 400px) {
+  header .slides-wrapper {
+    height: 650px;
+  }
 }
 
 @media screen and (min-width: 720px) {
