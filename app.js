@@ -3,6 +3,7 @@ const navigation = document.querySelector(".nav-list");
 const toggleBtn = document.querySelector(".nav-toggle");
 const height = window.innerHeight;
 
+console.log("arnold");
 
 // Show navbar and animate toggle button 
 toggleBtn.addEventListener("click",()=>{
@@ -94,3 +95,10 @@ const spanClicked = (e) =>{
 nextBtn.addEventListener("click",nextSlide);
 prevBtn.addEventListener("click",prevSlide);
 spans.forEach(spanClicked);
+
+
+const arr = [1,2,3,4,5,6];
+
+arr.forEach((element, index, arr) => {
+   console.log(element,index,arr[index]); 
+});
